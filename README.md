@@ -34,28 +34,28 @@ new RemoteLayer
 (Setting "autoHide" also implies "hidden" -- no need to set both.)
 
 ### Showing or Hiding the Remote:
-`myRemote.show()`
-`myRemote.hide()`
+- `myRemote.show()`
+- `myRemote.hide()`
 
 ### Aligning the Remote:
-`myRemote.align(align, margin?, fromBottom?)`
+- `myRemote.align(align, margin?, fromBottom?)`
 
 (Only useful if you wish to change the remote location some time after initialization.)
 
 ### Check Visibility:
-`myRemote.hidden` (read only)
+- `myRemote.hidden` (read only)
 
 ### Assign Actions to Buttons:
-- `myRemote.menuAction = ->` your action
-- `myRemote.homeAction = ->` your action
-- `myRemote.micAction = ->` your action
-- `myRemote.playPauseAction = ->` your action
-- `myRemote.volumeUpAction = ->` your action
-- `myRemote.volumeDownAction = ->` your action
-- `myRemote.clickAction = ->` your action
-- `myRemote.swipeUpAction = ->` your action
-- `myRemote.swipeDownAction = ->` your action
-- `myRemote.swipeLeftAction = ->` your action
-- `myRemote.swipeRightAction = ->` your action
+- `myRemote.menuAction = ->` \<your action>
+- `myRemote.homeAction = ->` \<your action>
+- `myRemote.micAction = ->` \<your action>
+- `myRemote.playPauseAction = ->` \<your action>
+- `myRemote.volumeUpAction = ->` \<your action>
+- `myRemote.volumeDownAction = ->` \<your action>
+- `myRemote.clickAction = ->` \<your action>
+- `myRemote.swipeUpAction = ->` \<your action>
+- `myRemote.swipeDownAction = ->` \<your action>
+- `myRemote.swipeLeftAction = ->` \<your action>
+- `myRemote.swipeRightAction = ->` \<your action>
 
 (In all cases, "myRemote" will be whatever name you supplied.)
