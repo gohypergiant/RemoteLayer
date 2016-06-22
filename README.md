@@ -43,7 +43,7 @@ new RemoteLayer
 (Only useful if you wish to change the remote location some time after initialization.)
 
 ### Check Visibility:
-- `myRemote.hidden` (read only)
+- `myRemote.hidden` \<boolean> (read only)
 
 ### Assign Actions to Buttons:
 - `myRemote.menuAction = ->` \<your action>
