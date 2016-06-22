@@ -4,7 +4,7 @@ The RemoteLayer module allows you to instantly generate an interactive Apple TV 
 
 ![](https://cloud.githubusercontent.com/assets/935/16284203/ac0bf54c-3895-11e6-81e3-3a50d43cc7d1.png)
 
-Save this file to the /modules folder within your Framer project.
+Save the RemoteLayer.coffee file to the /modules folder within your Framer project.
 Add the following two lines to your project in Framer Studio:
 
 ```
@@ -22,14 +22,14 @@ Set any of these by indenting once below the `new RemoteLayer` line, like so:
 new RemoteLayer
     gloss: true
 ```
-- align <string> ("left" || "center" || "right")
-- margin <number>
-- fromBottom <number>
-- gloss <boolean> 
-- transition <string> ("fade" || "pop")
-- hidden <boolean>
-- autoHide <boolean>
-- highlightColor <string> (hex or rgba)
+- align \<string> ("left" || "center" || "right")
+- margin \<number>
+- fromBottom \<number>
+- gloss \<boolean> 
+- transition \<string> ("fade" || "pop")
+- hidden \<boolean>
+- autoHide \<boolean>
+- highlightColor \<string> (hex or rgba)
 
 (Setting "autoHide" also implies "hidden" -- no need to set both.)
 
@@ -46,16 +46,16 @@ new RemoteLayer
 `myRemote.hidden` (read only)
 
 ### Assign Actions to Buttons:
-`myRemote.menuAction = ->` your action
-`myRemote.homeAction = ->` your action
-`myRemote.micAction = ->` your action
-`myRemote.playPauseAction = ->` your action
-`myRemote.volumeUpAction = ->` your action
-`myRemote.volumeDownAction = ->` your action
-`myRemote.clickAction = ->` your action
-`myRemote.swipeUpAction = ->` your action
-`myRemote.swipeDownAction = ->` your action
-`myRemote.swipeLeftAction = ->` your action
-`myRemote.swipeRightAction = ->` your action
+- `myRemote.menuAction = ->` your action
+- `myRemote.homeAction = ->` your action
+- `myRemote.micAction = ->` your action
+- `myRemote.playPauseAction = ->` your action
+- `myRemote.volumeUpAction = ->` your action
+- `myRemote.volumeDownAction = ->` your action
+- `myRemote.clickAction = ->` your action
+- `myRemote.swipeUpAction = ->` your action
+- `myRemote.swipeDownAction = ->` your action
+- `myRemote.swipeLeftAction = ->` your action
+- `myRemote.swipeRightAction = ->` your action
 
 (In all cases, "myRemote" will be whatever name you supplied.)
