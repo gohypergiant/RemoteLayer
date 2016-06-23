@@ -19,7 +19,7 @@ myRemote = new RemoteLayer
 Set any of these by indenting once below the `new RemoteLayer` line, like so:
 
 ```
-new RemoteLayer
+myRemote = new RemoteLayer
     gloss: true
 ```
 - align \<string> ("left" || "center" || "right")
