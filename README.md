@@ -7,8 +7,8 @@ The RemoteLayer module allows you to instantly generate an interactive Apple TV 
 Save the RemoteLayer.coffee file to the /modules folder within your Framer project.
 Add the following two lines to your project in Framer Studio:
 
-```
-{RemoteLayer} = require "RemoteLayer"
+```javascript
+RemoteLayer = require "RemoteLayer"
 myRemote = new RemoteLayer
 ```
 
@@ -25,7 +25,7 @@ myRemote = new RemoteLayer
 - align \<string> ("left" || "center" || "right")
 - margin \<number>
 - fromBottom \<number>
-- gloss \<boolean> 
+- gloss \<boolean>
 - transition \<string> ("fade" || "pop")
 - hidden \<boolean>
 - autoHide \<boolean>
@@ -46,16 +46,19 @@ myRemote = new RemoteLayer
 - `myRemote.hidden` \<boolean> (read only)
 
 ### Assign Actions to Buttons:
-- `myRemote.menuAction = ->` \<your action>
-- `myRemote.homeAction = ->` \<your action>
-- `myRemote.micAction = ->` \<your action>
-- `myRemote.playPauseAction = ->` \<your action>
-- `myRemote.volumeUpAction = ->` \<your action>
-- `myRemote.volumeDownAction = ->` \<your action>
-- `myRemote.clickAction = ->` \<your action>
-- `myRemote.swipeUpAction = ->` \<your action>
-- `myRemote.swipeDownAction = ->` \<your action>
-- `myRemote.swipeLeftAction = ->` \<your action>
-- `myRemote.swipeRightAction = ->` \<your action>
+```javascript
+myRemote = new RemoteLayer
+	menuAction: -> <action>
+	homeAction: -> <action>
+	micAction: -> <action>
+	playPauseAction: -> <action>
+	volumeUpAction: -> <action>
+	volumeDownAction: -> <action>
+	clickAction: -> <action>
+	swipeUpAction: -> <action>
+	swipeDownAction: -> <action>
+	swipeLeftAction: -> <action>
+	swipeRightAction: -> <action>
+```
 
 (In all cases, "myRemote" will be whatever name you supplied.)

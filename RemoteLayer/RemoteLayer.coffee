@@ -4,7 +4,7 @@ RemoteLayer module by Black Pixel, Inc.
 Save this file to the /modules folder within your Framer project.
 Add the following two lines to your project in Framer Studio:
 
-{RemoteLayer} = require "RemoteLayer"
+RemoteLayer = require "RemoteLayer"
 myRemote = new RemoteLayer
 
 ("myRemote" can be any name you like.)
@@ -34,17 +34,18 @@ CHECK VISIBILITY:
 myRemote.hidden (read only)
 
 ASSIGN ACTIONS TO BUTTONS:
-myRemote.menuAction = -> <action>
-myRemote.homeAction = -> <action>
-myRemote.micAction = -> <action>
-myRemote.playPauseAction = -> <action>
-myRemote.volumeUpAction = -> <action>
-myRemote.volumeDownAction = -> <action>
-myRemote.clickAction = -> <action>
-myRemote.swipeUpAction = -> <action>
-myRemote.swipeDownAction = -> <action>
-myRemote.swipeLeftAction = -> <action>
-myRemote.swipeRightAction = -> <action>
+myRemote = new RemoteLayer
+	menuAction: -> <action>
+	homeAction: -> <action>
+	micAction: -> <action>
+	playPauseAction: -> <action>
+	volumeUpAction: -> <action>
+	volumeDownAction: -> <action>
+	clickAction: -> <action>
+	swipeUpAction: -> <action>
+	swipeDownAction: -> <action>
+	swipeLeftAction: -> <action>
+	swipeRightAction: -> <action>
 
 (In all cases, "myRemote" will be whatever name you supplied.)
 '''
