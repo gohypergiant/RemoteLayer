@@ -62,3 +62,9 @@ myRemote = new RemoteLayer
 ```
 
 (In all cases, "myRemote" will be whatever name you supplied.)
+
+---
+
+Website: [blackpixel.com](https://blackpixel.com) &nbsp;&middot;&nbsp;
+GitHub: [@bpxl-labs](https://github.com/bpxl-labs/) &nbsp;&middot;&nbsp;
+Twitter: [@blackpixel](https://twitter.com/blackpixel)
