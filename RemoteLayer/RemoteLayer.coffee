@@ -278,7 +278,7 @@ defaultOptions =
   fromBottom: 550
   autoHide: false
   backgroundColor: 'transparent'
-	highlightColor: 'rgba(74, 144, 226, 0.5)'
+  highlightColor: 'rgba(74, 144, 226, 0.5)'
   width: 228
   height: 740
   clip: false
