@@ -15,11 +15,11 @@ PROPERTIES:
 - fromBottom <number>
 - gloss <boolean>
 - transition <string> ("fade" || "pop")
-- hidden <boolean>
+- hide <boolean>
 - autoHide <boolean>
 - highlightColor <string> (hex or rgba)
 
-(Setting "autoHide" also implies "hidden" -- no need to set both.)
+(Setting "autoHide" also implies "hide" -- no need to set both.)
 
 SHOWING OR HIDING THE REMOTE:
 myRemote.show()
@@ -272,7 +272,7 @@ createVolumeButtonDown = (parent) ->
 defaultOptions =
   gloss: false
   transition: 'fade'
-  hidden: false
+  hide: false
   align: 'right'
   margin: 50
   fromBottom: 550
@@ -300,7 +300,7 @@ class RemoteLayer extends Layer
   # initialization
   constructor: (options={}) ->
     @options = _.defaults options, defaultOptions
-    @_hidden = @options.hidden;
+    @_hidden = @options.hide;
     super @options
 
     # base layer to contain all visual elements
@@ -346,7 +346,7 @@ class RemoteLayer extends Layer
       inertSurface.backgroundColor = '#1A1A1A'
 
     # show/hide button area
-    if @options.autoHide || @options.hidden
+    if @options.autoHide || @options.hide
       @_hidden = true
       @onMouseOver @showCautiously
       @onMouseOut @hideCautiously
