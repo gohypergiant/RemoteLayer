@@ -278,7 +278,7 @@ defaultOptions =
   fromBottom: 550
   autoHide: false
   backgroundColor: 'transparent'
-	highlightColor: 'rgba(74, 144, 226, 0.5)'
+  highlightColor: 'rgba(74, 144, 226, 0.5)'
   width: 228
   height: 740
   clip: false
@@ -362,12 +362,13 @@ class RemoteLayer extends Layer
     roundButtons = [menuButton, homeButton, micButton, playPauseButton, volumeButton]
     innerButtons = [menuButtonInner, homeButtonInner, micButtonInner, playPauseButtonInner]
     volumeButtons = [volumeButtonUp, volumeButtonDown]
+    highlight = @options.highlightColor
 
     # button mouseover effects
     for button in roundButtons
       button.onMouseOver ->
         this.style =
-          boxShadow: "0 0 0 2pt rgba(0, 0, 0, 0.5), 0 0 0 5pt #{@options.highlightColor}"
+          boxShadow: "0 0 0 2pt rgba(0, 0, 0, 0.5), 0 0 0 5pt #{highlight}"
       button.onMouseOut ->
         this.style =
           boxShadow: '0 0 0 2pt rgba(0, 0, 0, 0.5)'
