@@ -27,11 +27,11 @@ myRemote = new RemoteLayer
 - fromBottom \<number>
 - gloss \<boolean>
 - transition \<string> ("fade" || "pop")
-- hidden \<boolean>
+- hide \<boolean>
 - autoHide \<boolean>
 - highlightColor \<string> (hex or rgba)
 
-(Setting "autoHide" also implies "hidden" -- no need to set both.)
+(Setting "autoHide" also implies "hide" -- no need to set both.)
 
 ### Showing or Hiding the Remote:
 - `myRemote.show()`
