@@ -1,4 +1,4 @@
-### RemoteLayer module
+### RemoteLayer Framer Module
 
 The RemoteLayer module allows you to instantly generate an interactive Apple TV remote for your tvOS app prototypes. You can choose your preferred styling, alignment, animation and button highlight color. All buttons (and swipes on the touchpad) can be configured to perform your own supplied actions.
 
