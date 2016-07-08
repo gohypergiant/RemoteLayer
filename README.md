@@ -5,7 +5,7 @@ The RemoteLayer module allows you to instantly generate an interactive Apple TV 
 ![](https://cloud.githubusercontent.com/assets/935/16284203/ac0bf54c-3895-11e6-81e3-3a50d43cc7d1.png)
 
 Save the RemoteLayer.coffee file to the /modules folder within your Framer project.
-Add the following two lines to your project in Framer Studio:
+Add the following two lines to your Framer project:
 
 ```javascript
 RemoteLayer = require "RemoteLayer"
