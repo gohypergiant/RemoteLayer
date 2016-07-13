@@ -2,7 +2,7 @@
 
 The RemoteLayer module allows you to instantly generate an interactive Apple TV remote for your tvOS app prototypes. You can choose your preferred styling, alignment, animation and button highlight color. All buttons (and swipes on the touchpad) can be configured to perform your own supplied actions.
 
-![](https://cloud.githubusercontent.com/assets/935/16284203/ac0bf54c-3895-11e6-81e3-3a50d43cc7d1.png)
+<img src="https://cloud.githubusercontent.com/assets/935/16821270/e57262d6-491a-11e6-82ee-e1db13fe6522.png" width="497" style="display: block; margin: auto" alt="RemoteLayer preview" />
 
 Save the RemoteLayer.coffee file to the /modules folder within your Framer project.
 Add the following two lines to your Framer project:
