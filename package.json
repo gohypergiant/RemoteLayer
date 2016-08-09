@@ -1,0 +1,31 @@
+{
+  "name": "framer-remotelayer",
+  "version": "1.0.0",
+  "description": "A Framer module for creating an interactive Apple TV remote for tvOS prototypes.",
+  "homepage": "https://github.com/bpxl-labs/RemoteLayer",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bpxl-labs/RemoteLayer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bpxl-labs/RemoteLayer/issues"
+  },
+  "main": "RemoteLayer/RemoteLayer.coffee",
+  "author": "Black Pixel",
+  "license": "MIT",
+  "keywords": [
+    "appletv",
+    "framerjs",
+    "framer",
+    "coffeescript",
+    "remote",
+    "control"
+  ],
+  "devDependencies": {
+    "publish-please": "^2.2.0"
+  },
+  "scripts": {
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard"
+  }
+}
