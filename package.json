@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/bpxl-labs/RemoteLayer/issues"
   },
-  "main": "RemoteLayer/RemoteLayer.coffee",
+  "main": "RemoteLayer.coffee",
   "author": "Black Pixel",
   "license": "MIT",
   "keywords": [
@@ -20,12 +20,5 @@
     "coffeescript",
     "remote",
     "control"
-  ],
-  "devDependencies": {
-    "publish-please": "^2.2.0"
-  },
-  "scripts": {
-    "publish-please": "publish-please",
-    "prepublish": "publish-please guard"
-  }
+  ]
 }
