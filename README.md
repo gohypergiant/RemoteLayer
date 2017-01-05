@@ -2,55 +2,41 @@
 
 [![license](https://img.shields.io/github/license/bpxl-labs/RemoteLayer.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](.github/CONTRIBUTING.md)
-[![Maintenance](https://img.shields.io/maintenance/yes/2016.svg)]()
+[![Maintenance](https://img.shields.io/maintenance/yes/2017.svg)]()
 
 The RemoteLayer module allows you to instantly generate an interactive Apple TV remote for your tvOS app prototypes. You can choose your preferred styling, alignment, animation and button highlight color. All buttons (and swipes on the touchpad) can be configured to perform your own supplied actions.
 
 <img src="https://cloud.githubusercontent.com/assets/935/16821270/e57262d6-491a-11e6-82ee-e1db13fe6522.png" width="497" style="display: block; margin: auto" alt="RemoteLayer preview" />
 
-Save the RemoteLayer.coffee file to the /modules folder within your Framer project.
-Add the following two lines to your Framer project:
+### Installation
+
+#### NPM Installation
+
+```
+$ cd /your/framer/project
+$ npm i framer-remotelayer --save
+```
+
+#### Manual Installation
+
+Copy / save the `RemoteLayer.coffee` file into your project's `modules` folder.
+
+### Adding It To Your Project
+
+In your Framer project add the following:
 
 ```javascript
-RemoteLayer = require "RemoteLayer"
+// If you manually installed
+RemoteLayer = require 'RemoteLayer'
+// Else
+RemoteLayer = require 'framer-remotelayer'
+
 myRemote = new RemoteLayer
 ```
 
-(“myRemote” can be any name you like.)
+### Assigning Actions to Buttons
 
-### Properties:
-
-Set any of these by indenting once below the `new RemoteLayer` line, like so:
-
-```
-myRemote = new RemoteLayer
-    gloss: true
-```
-- align \<string> ("left" || "center" || "right")
-- margin \<number>
-- fromBottom \<number>
-- gloss \<boolean>
-- transition \<string> ("fade" || "pop")
-- hide \<boolean>
-- autoHide \<boolean>
-- highlightColor \<string> (hex or rgba)
-
-(Setting "autoHide" also implies "hide" -- no need to set both.)
-
-### Showing or Hiding the Remote:
-- `myRemote.show()`
-- `myRemote.hide()`
-
-### Aligning the Remote:
-- `myRemote.align(align, margin?, fromBottom?)`
-
-(Only useful if you wish to change the remote location some time after initialization.)
-
-### Check Visibility:
-- `myRemote.hidden` \<boolean> (read only)
-
-### Assign Actions to Buttons:
-```javascript
+```coffeescript
 myRemote = new RemoteLayer
 	menuAction: -> <action>
 	homeAction: -> <action>
@@ -65,7 +51,57 @@ myRemote = new RemoteLayer
 	swipeRightAction: -> <action>
 ```
 
-(In all cases, "myRemote" will be whatever name you supplied.)
+### API
+
+#### `new RemoteLayer`
+
+Instantiates a new instance of RemoteLayer.
+
+**Available options**
+
+```coffeescript
+myRemote = new RemoteLayer
+  align: <string> ("left" || "center" || "right")
+  margin: <number>
+  fromBottom: <number>
+  gloss: <boolean>
+  transition: <string> ("fade" || "pop")
+  hide: <boolean>
+  autoHide: <boolean>
+  highlightColor: <string> (hex or rgba)
+```
+
+_Setting `autoHide` implicitly sets `hide` to true._
+
+**Returns**
+
+`Layer` _(Object)_: A newly instantiated Framer Layer.
+
+#### `myRemote.show()`
+
+Show the RemoteLayer instance.
+
+#### `myRemote.hide()`
+
+Hide the RemoteLayer instance.
+
+#### `myRemote.align(align, margin, fromBottom)`
+
+Useful if you wish to change the remote location some time after initialization.
+
+**Arguments**
+
+1. `align` _(String)_: One of ("left" || "center" || "right")
+2. `margin` _(Number)_: Layer margin value
+3. `fromBottom` _(Number)_: Distance from bottom of screen
+
+#### `myRemote.hidden`
+
+> readonly
+
+**Returns**
+
+_(Boolean)_: Whether or not the RemoteLayer is currently hidden
 
 ---
 
