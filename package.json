@@ -1,6 +1,6 @@
 {
   "name": "framer-remotelayer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A Framer module for creating an interactive Apple TV remote for tvOS prototypes.",
   "homepage": "https://github.com/bpxl-labs/RemoteLayer",
   "repository": {
