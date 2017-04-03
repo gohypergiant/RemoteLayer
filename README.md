@@ -61,14 +61,14 @@ Instantiates a new instance of RemoteLayer.
 
 ```coffeescript
 myRemote = new RemoteLayer
-  align: <string> ("left" || "center" || "right")
-  margin: <number>
-  fromBottom: <number>
-  gloss: <boolean>
-  transition: <string> ("fade" || "pop")
-  hide: <boolean>
-  autoHide: <boolean>
-  highlightColor: <string> (hex or rgba)
+	align: <string> ("left" || "center" || "right")
+	margin: <number>
+	fromBottom: <number>
+	gloss: <boolean>
+	transition: <string> ("fade" || "pop")
+	hide: <boolean>
+	autoHide: <boolean>
+	highlightColor: <string> (hex or rgba)
 ```
 
 _Setting `autoHide` implicitly sets `hide` to true._
