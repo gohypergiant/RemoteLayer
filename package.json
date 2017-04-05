@@ -20,5 +20,13 @@
     "coffeescript",
     "remote",
     "control"
-  ]
+  ],
+  "dependencies": {
+    "coffeeify": "^2.1.0"
+  },
+  "browserify": {
+    "transform": [
+      "coffeeify"
+    ]
+  }
 }
