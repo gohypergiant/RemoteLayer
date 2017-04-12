@@ -14,7 +14,7 @@ The RemoteLayer module allows you to instantly generate an interactive Apple TV 
 
 ```
 $ cd /your/framer/project
-$ npm i framer-remotelayer --save
+$ npm i framer-remotelayer
 ```
 
 #### Manual Installation
