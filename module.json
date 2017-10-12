@@ -1,0 +1,14 @@
+{
+    "name": "RemoteLayer",
+    "description": "Generates an interactive Apple TV remote for tvOS app prototypes.",
+    "author": "John Marstall",
+
+    "require": "RemoteLayer = require 'RemoteLayer'",
+		"install": [
+			"RemoteLayer.coffee",
+			"README.md"
+		],
+    "example": "example.coffee",
+
+    "thumb": "thumb.png"
+}
