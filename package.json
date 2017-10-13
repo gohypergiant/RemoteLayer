@@ -1,5 +1,5 @@
 {
-  "name": "framer-remotelayer",
+  "name": "@blackpixel/framer-remotelayer",
   "version": "1.1.1",
   "description": "A Framer module for creating an interactive Apple TV remote for tvOS prototypes.",
   "homepage": "https://github.com/bpxl-labs/RemoteLayer",

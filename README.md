@@ -14,7 +14,7 @@ The RemoteLayer module allows you to instantly generate an interactive Apple TV 
 
 ```
 $ cd /your/framer/project
-$ npm i framer-remotelayer
+$ npm i @blackpixel/framer-remotelayer
 ```
 
 #### Manual Installation
@@ -29,7 +29,7 @@ In your Framer project add the following:
 // If you manually installed
 RemoteLayer = require 'RemoteLayer'
 // Else
-RemoteLayer = require 'framer-remotelayer'
+RemoteLayer = require '@blackpixel/framer-remotelayer'
 
 myRemote = new RemoteLayer
 ```
