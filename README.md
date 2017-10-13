@@ -27,11 +27,11 @@ Copy / save the `RemoteLayer.coffee` file into your project's `modules` folder.
 
 In your Framer project add the following:
 
-```javascript
-// If you manually installed
-RemoteLayer = require 'RemoteLayer'
-// Else
-RemoteLayer = require '@blackpixel/framer-remotelayer'
+```coffeescript
+# If you manually installed
+RemoteLayer = require "RemoteLayer"
+# else
+RemoteLayer = require "@blackpixel/framer-remotelayer"
 
 myRemote = new RemoteLayer
 ```
