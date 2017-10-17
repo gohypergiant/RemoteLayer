@@ -105,6 +105,10 @@ Useful if you wish to change the remote location some time after initialization.
 
 _(Boolean)_: Whether or not the RemoteLayer is currently hidden
 
+#### Example project
+[Download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/bpxl-labs/RemoteLayer/tree/master/example.framer) the example to try it for yourself.
+
+
 ---
 
 Website: [blackpixel.com](https://blackpixel.com) &nbsp;&middot;&nbsp;
